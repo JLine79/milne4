@@ -90,6 +90,27 @@ textarea {
 html {
   font-family: 'Open Sans', sans-serif;
   background-color: #000;
+  margin-bottom: 0em;
+}
+
+header {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+header nav {
+  text-align: end;
+  width: 60%;
+
+}
+
+header h1 {
+  text-align: right;
+}
+
+.header-image {
+  background: url(../img/milne4-logo.jpg) no-repeat;
 }
 
 .full-width p {
@@ -98,6 +119,17 @@ html {
 
 .orange {
   background-color: #f46524;
+}
+
+footer {
+  background-color: #d6ddef;
+}
+
+footer p {
+ display: inline-flex;
+ margin-bottom: 0em;
+ padding: 1em;
+ color: #000;
 }
 /* ==========================================================================
    Helper classes
