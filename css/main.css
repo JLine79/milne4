@@ -93,26 +93,20 @@ html {
 }
 
 header {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #000;
   position: fixed;
-  display: inline-flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   top: 0;
-  width:100%;
   max-height: 200px;
+  padding-bottom: 1.5em;
 }
 
-header h1 {
-  width: 40%;
-  text-align: center;
-}
-
-header nav {
-  text-align: end;
-  width: 35%;
-  padding-right: 2em;
+nav {
+  display: inline-flex;
+  width: 100%;
 }
 
 header nav ul li {
@@ -121,9 +115,16 @@ header nav ul li {
   vertical-align: bottom;
 }
 
+h2 {
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+}
+
 
 main {
-  padding-top: 12em;
+  padding-top: 14em;
 }
 
 .full-width p {
