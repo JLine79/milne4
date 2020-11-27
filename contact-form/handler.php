@@ -16,6 +16,7 @@ $pp = new FormHandler();
 $validator = $pp->getValidator();
 $validator->fields(['name','email'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
+$validator->field('telephone')->maxLength(50);
 $validator->field('message')->maxLength(6000);
 
 
