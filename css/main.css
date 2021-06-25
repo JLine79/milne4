@@ -43,9 +43,9 @@ html {
 
 hr {
   display: block;
-  height: 1px;
+  height: 2px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #fff;
   margin: 1em 0;
   padding: 0;
 }
@@ -98,55 +98,102 @@ header {
   background-color: #000;
   position: fixed;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   top: 0;
-  max-height: 200px;
+  height: 170px;
   padding-bottom: 1.5em;
+  padding-top: 1.5em;
   width: 100%;
+}
+
+.header-border {
+  border-top: solid white 0.5em;
+  width: 100%;
+  top: 300px;
+}
+
+.logo {
+  display: flex;
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  padding-bottom: 1em;
 }
 
 h1 {
+  font-size: 1.2em;
+}
+
+/*Burger menu for mobile devices */
+
+.nav-container {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+
+.nav-container i {
+  position: fixed;
+  top: 170px;
+  right: 20px;
   font-size: 2em;
 }
 
+.hide {
+  display: none;
+}
+
 nav {
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  background-color: #000;
 }
 
-nav ul {
-  padding: 1em;
+.nav-container ul {
+  list-style-type: none;
+  padding-inline-start: 20px;
 }
 
-nav ul li {
-  display: inline;
-  padding: 1em;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-a {
+.nav-container a { /*Style menu links */
+  color: white;
+  padding: 0.5em;
   text-decoration: none;
-  color: inherit;
+  font-size: 1em;
+  display: block;
+}
+
+.nav-container a:hover {
+  color:#f46524;
+  font-weight: bold;
 }
 
 .anchor{ /*To prevent anchor links from hiding beneath the fixed header when clicked*/
-  display:block;
-  height:240px; 
-  margin-top:-240px; 
-  visibility:hidden;
+  display: block;
+   height: 200px;
+   margin-top: -200px;
+  visibility: hidden;
 }
+
+.header-gap { /*to prevent the first menu item from hiding behind the header */
+  margin-top: 90px;
+}
+
 
 h2 {
   font-size: 1.2em;
-  padding: 0.5em;
+  padding: 1.2em 0.5em 0.5em 0.5em;
   margin: 0;
   text-align: center;
 }
 
 main {
-  padding-top: 14em;
+  padding-top: 10em;
 }
 
 .full-width p, h3 {
@@ -251,6 +298,10 @@ footer {
   background-color: #ddd;
   text-align: center;
   
+}
+
+.footer-logo {
+  padding-top: 2em;
 }
 
 footer p {
@@ -362,6 +413,28 @@ footer p {
     padding: 1em;
   }
 
+nav {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav ul {
+  padding: 1em;
+}
+
+nav ul li {
+  display: inline;
+  padding: 1em;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
   .contact {
     text-align: center;
   }
@@ -373,7 +446,11 @@ footer p {
     padding: 2em;
   }
 
-  nav li {
+  h2 {
+    font-size: 1.75em;
+  }
+
+  nav ul li a {
     font-size: 1.5em;
   }
 

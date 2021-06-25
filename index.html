@@ -22,99 +22,86 @@
   <meta name="theme-color" content="#fafafa">
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/92d37724ee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
   <header class="full-width">
-    <h1>Milne4</h1>
-    
-    <h2>Retrofit Assessment</h2>
+    <img id="home" class="logo" src="img/site-logo.jpg"/>
+        <h1>Retrofit Assessment</h1>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href=#funding>Funding</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
+    <div class="nav-container">
+      <i class="fas fa-bars" id="icon"></i>
+        <nav id="navbar" class="hide"><!-- Hidden by default -->
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href=#funding>Funding</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav> 
+    </div>
   </header>
+  
 
   <main>
-   <span class="anchor" id="about"></span>
-   <div class="full-width orange">
-     <h2>About</h2>
-       <h3>Welcome</h3>
-       <p>For 14 years I have worked right across the energy saving and generation industry helping thousands of people improve homes and reduce bills.</p>
-       <p>Milne4 makes sure you get relevant, objective advice before spending hours doing research or getting quotes. The advice I give to you will be free. Should you choose to proceed to install I will contact 3 companies and they will pay me commission for any work carried out. </p>
-       <p>To find out if I can help you, use the contact form below or give me a call.</p>
-   </div>
+    <span class="anchor" id="about"></span>
+      <div class="full-width header-gap orange">
+        <h2>About</h2>
+          <p>At Milne4 we provide a whole house approach to energy saving and energy generation.</p>
+          <p>As a fully qualified Retrofit Assessor under PAS2035 all surveys will be government backed by Trustmark, the highest standards in the domestic retrofit industry.</p>
+          <p>We are not tied to specific products or manufacturers, so any energy saving measures we recommend will be right for you and your home.</p>
+          <p>Depending on your circumstances, many of the measures we recommend will be subject to total or partial funding under new ECO3 (Energy Company Obligation) Scheme or Subsidised by monthly payments once installed by the RHI. (Renewable Heat Incentive)</p>
+      </div>
+    
+    <span class="anchor" id="funding"></span>
+      <div class="full-width">
+        <h2>Funding</h2>
+          <h3>RHI</h3>
+            <p>The Domestic Renewable Heat Incentive (Domestic RHI) is a government financial incentive to promote the use of renewable heat. Switching to heating systems that use eligible energy sources can help the UK reduce its carbon emissions and meet its renewable energy targets.</p>
+            <p>People who join the scheme and stick to its rules receive quarterly payments for seven years for the amount of clean, green renewable heat it’s estimated their system produces.</p>
+            <p>Since opening in April 2014, the scheme has already seen thousands of people successfully join and receive payments.</p>
+          
+          <hr>
 
-   <span class="anchor" id="services"></span>
-   <div class="full-width">
-     <h2>Services</h2>
-      <h3>Advice</h3>
-        <ul>
-          <li>Free advice on energy saving and generation technologies and Domestic Energy Assessment.</li>
-          <li>Free service for domestic properties, landlords. All advice is independent and backed by 14 years experience in home automation, micro generation, insulation and central heating.</li>
-       </ul>
+          <h3>ECO Funding</h3>
+            <p>Under ECO, medium and larger energy suppliers fund the installation of energy efficiency measures in British households.</p>
+            <p>Each obligated supplier has an overall target based on its share of the domestic energy market in Britain.</p>
+            <p>The obligated energy suppliers work with installers to introduce certain efficiency measures into your home, such as loft or wall insulation, or heating measures.</p>
+            <p>The ECO3 scheme consists of one distinct obligation: the Home Heating Cost Reduction Obligation (HHCRO).</p>
+      </div>
+    
+    <span class="anchor" id="services"></span>
+      <div class="full-width orange">
+        <h2>Services</h2>
+          <h3>Retrofit Assessment</h3>
+            <p>Whole House Retrofit is a complete approach to making homes more energy efficient.</p>
+            <p>It maps out a journey for each property that includes strategies for improving insulation, ventilation and heating efficiency, and is fundamental to achieving PAS2030 and PAS2035 standards for energy efficiency in buildings.</p>
 
-      <h3>Manage</h3>
-        <ul>
-          <li>Prince 2 and Agile project management.</li>
-          <li>If you intend on installing multiple technologies at the same time or over some time I can help plan and future proof.</li>
-        </ul>
+          <hr>
 
-      <h3>Support</h3>
-        <ul>
-          <li>Project handover and ongoing system support.</li>
-          <li>Get the most out of your system, ongoing tweaking, health checks and more.</li>
-        </ul>
-   </div>
+          <h3>Technical Survey</h3>
+            <p>Should You decide to explore any energy saving measures in more detail we can move straight to a more invasive technical survey, that will in turn be passed on to an available retrofit coordinator and eventually our chosen PAS 2030 compliant installer.</p> 
+            <p>This will flag any potential issues, such as existing damp, access, or indeed the potential for any issues to arise if we are recommending more than one measure.</p>
+            <p>By adhering to these standards we ensure your installation will comply with ECO funding regulations.</p>
+      </div>
 
    <span class="anchor" id="contact"></span>
-   <div class="full-width orange contact">
-     <h2>Contact</h2>
-       <p>Please leave me a message via the <span class="black"><a href="contact-form/formpage.html">contact form.</a></span> I will be in touch.</p>
-   </div>
+    <div class="full-width contact">
+      <h2>Contact</h2>
+        <p>Please leave me a message via the <a href="contact-form/formpage.html">contact form</a>. I will be in touch.</p>
+    </div>
 
-   <div class="reviews-container">
-     <!-- Full-width quotes -->
-     <div class="single-review">
-       <q>This is a review, Milne is fabulous, please give him all your money</q>
-       <p class="author">Kylo Ren</p>
-     </div>
-
-     <div class="single-review">
-      <q>This is another review. I love my new boiler and shit</q>
-      <p class="author">Dave Grohl</p>
-     </div>
-
-     <div class="single-review">
-       <q>Yeah what they said</q>
-       <p class="author">Hilary Clinton</p>
-     </div>
    
-
-     <!-- Next/prev buttons -->
-     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <!-- Dots/bullets/indicators -->
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
    
    
   <footer>
-   <p>Milne4 Independent Domestic Energy Saving &amp; Generation Expert, Clifford Street, Leicester</p>
-   <p>Mobile 07756 918188</p>
+    <img class="logo footer-logo" src="img/trustMarkLogo.svg" alt="Trust Mark Accreditation"/>
+    <img class="logo footer-logo" src="img/mcs-certified-mark-black.png" alt="MCS Certified"/>
+    <p>Milne4 Independent Domestic Energy Saving &amp; Retrofit Expert, Clifford Street, Leicester</p>
+    <p>Mobile 07756 918188</p>
   </footer>
 
 </main>
@@ -122,7 +109,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
 
-  <script  src="js/function.js"></script>
+  <!--<script  src="js/function.js"></script>-->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
