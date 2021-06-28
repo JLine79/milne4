@@ -212,9 +212,25 @@ li {
   background-color: #f46524;
 }
 
-/*==================================================================================================
+/* ============================================================================================
+Contact Me area
+============================================================================================= */
+
+.contact a:active {
+  color: #f46524;
+}
+
+.contact a:hover {
+  color: #f46524;
+}
+
+.contact a:visited {
+  color: #f46524;
+}
+
+/*==============================================================================================
 Reviews slider
-==================================================================================================*/
+=============================================================================================== */
 
 /* Reviews slideshow container */
 .reviews-container {
@@ -295,7 +311,7 @@ Footer
 ==================================================================================================*/
 
 footer {
-  background-color: #ddd;
+  background-color: #f5f5f5;
   text-align: center;
   
 }
@@ -309,6 +325,8 @@ footer p {
   padding: 1em;
   color: #000;
 }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -397,12 +415,48 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
+/* ===========================================================================
+  TABLET STYLES
+  ============================================================================ */
+
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+  .logo {
+    width: 40%;
+  }
+
+  .nav-container i {
+    display: none;
+  } 
+
+  .nav-container ul {
+    display: inline-flex;
+    text-align: center;
+  }
+
+  #navbar {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+  }
 
   header h1 {
     width: 100%;
     text-align: center;
+  }
+
+  .header-gap {
+    margin-top: 200px;
+  }
+
+  .anchor {
+    height: 300px;
+    margin-top: -300px;
+  }
+
+  main {
+    padding-top: 6em;
   }
 
   .full-width p, h3 {
@@ -413,32 +467,31 @@ footer p {
     padding: 1em;
   }
 
-nav {
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
-}
 
-nav ul {
-  padding: 1em;
-}
-
-nav ul li {
-  display: inline;
-  padding: 1em;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   .contact {
     text-align: center;
   }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }
+
+/* ======================================================================================
+  DESKTOP STYLES
+  ===================================================================================== */
 
 @media all and (min-width: 1200px) {
  
@@ -446,11 +499,55 @@ a {
     padding: 2em;
   }
 
+  header {
+    height: 200px;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  nav {
+    top: 220px;
+  }
+
+  .nav-container ul {
+    padding-inline-start: 0;
+  }
+
+  .nav-container a {
+    font-size: 1.25em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .header-gap {
+    margin-top: 220px;
+  }
+
+  .anchor {
+    height: 270px;
+    margin-top: -270px;
+  }
+
   h2 {
     font-size: 1.75em;
   }
 
   nav ul li a {
+    font-size: 1.5em;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
     font-size: 1.5em;
   }
 
